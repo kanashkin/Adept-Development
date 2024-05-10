@@ -98,6 +98,8 @@ span {
     letter-spacing: -1.0086212158203125px;
     position: relative;
     padding-left: 54px;
+    transform: translateX(-60vw);
+    transition: .8s ease;
 }
 
 .promo__list-item::before {
@@ -152,4 +154,33 @@ span {
     font-weight: 400;
     line-height: 31px;
     max-width: 531px;
+}
+
+.promo__line {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 258px;
+    background: #000000;
+}
+
+.promo__line:nth-child(1) {
+    top: 525px;
+    left: -89px;
+}
+.promo__line:nth-child(2) {
+    top: 674px;
+    left: -112px;
+}
+.promo__line:nth-child(3) {
+    bottom: 590px;
+    left: -109px;
+}
+.promo__line:nth-child(4) {
+    bottom: 440px;
+    left: -46px;
+}
+.promo__line:nth-child(5) {
+    bottom: 295px;
+    left: 61px;
 }
