@@ -485,8 +485,121 @@ span {
 /* ACCORDEON SECTION */
 
 .accordeon {
-    padding: 300px 0 40px;
+    padding-top: 300px;
     background: #F6F4EE;
+}
+
+.accordeon__wrapper {
+    max-width: 1420px;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.accordeon__item .accordeon__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-left-width: 0;
+    border-right-width: 0;
+    padding: 40px 20px;
+}
+
+.accordeon__item:nth-child(1) .accordeon__wrapper {
+    border-top-width: 0;
+}
+
+.accordeon__title {
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 74.8px;
+    letter-spacing: 0.01em;
+}
+
+.accordeon__items {
+    margin-top: 40px;
+}
+
+.accordeon__item {
+    cursor: pointer;
+    transition: .6s all;
+}
+
+.accordeon__item.active {
+    background: rgba(213, 181, 99, .2);
+}
+
+.accordeon__item-descr,
+.accordeon__item-img {
+    opacity: 0;
+    transition: .3s all;
+}
+
+.accordeon__item.active .accordeon__item-descr,
+.accordeon__item.active .accordeon__item-img {
+    opacity: 1;
+    height: auto;
+}
+
+.accordeon__item.active .accordeon__item-descr {
+    margin-top: 12px;
+}
+
+.accordeon__item.active .accordeon__item-link {
+    transform: scale(1.8);
+}
+
+.accordeon__item__content {
+    max-width: 734px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordeon__item-category {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: #807E7E;
+}
+
+.accordeon__item-title {
+    margin-top: 12px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+}
+
+.accordeon__item-descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    max-width: 574px;
+}
+
+.accordeon__item-img {
+    margin-right: 130px;
+}
+
+.accordeon__item-link {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 46px;
+    height: 46px;
+    background-color: var(--orange-color);
+    background-image: url(../img/accordeon/link-arrow.svg);
+    background-position: center;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: .5s all;
+}
+
+.accordeon__item-link:hover {
+    background-color: var(--hover-orange-color);
 }
 
 /* CASES SECTION */
