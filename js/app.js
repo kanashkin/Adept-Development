@@ -18,8 +18,6 @@ function accordeon() {
         item.style.height = blockHeight + 'px'
     })
 
-    console.log(activeHeights);
-
     items.forEach(function(item, i) {
         item.addEventListener('mouseenter', function(e) {
             item.classList.add('active')
