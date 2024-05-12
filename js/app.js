@@ -30,7 +30,7 @@ function accordeon() {
             })
         } else {
             window.addEventListener('scroll', function() {
-                if (item.getBoundingClientRect().top <= window.innerHeight / 2) {
+                if (item.getBoundingClientRect().top <= window.innerHeight / 3) {
                     item.classList.add('active')
                     item.style.height = activeHeights[i] + 'px'
                 }
@@ -77,6 +77,15 @@ function moveAccordeonLink() {
     })
 }
 
+function moveAccordeonImg() {
+    const contents = document.querySelectorAll('.accordeon__item__content')
+    const imgs = document.querySelectorAll('.accordeon__item-img')
+
+    imgs.forEach(function(item, i) {
+        contents[i].append(item)
+    })
+}
+
 function moveCasesItems() {
     const columns = document.querySelectorAll('.cases__column')
     const currentItems = columns[1].querySelectorAll('.cases__item')
@@ -88,7 +97,25 @@ function moveCasesItems() {
     columns[1].remove()
 }
 
+function fixedBtn() {
+    const orientirBlock = document.querySelector('.info')
+    const btn = document.querySelector('.fixed-btn')
+
+    window.addEventListener('scroll', function() {
+        if (orientirBlock.getBoundingClientRect().top <= 0) {
+            btn.classList.add('active')
+        } else {
+            btn.classList.remove('active')
+        }
+    })
+}
+
 if (window.innerWidth <= 999) {
     moveAccordeonLink()
     moveCasesItems()
+}
+
+if (window.innerWidth <= 767) {
+    moveAccordeonImg()
+    fixedBtn()
 }
