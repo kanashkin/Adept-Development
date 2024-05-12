@@ -1064,7 +1064,7 @@ span {
 
 .accordeon__item {
     cursor: pointer;
-    transition: .6s all;
+    transition: .8s all;
     padding: 0 30px;
 }
 

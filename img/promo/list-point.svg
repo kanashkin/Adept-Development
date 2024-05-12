@@ -1,18 +1,1 @@
-<svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_396_88630)">
-<rect x="3" y="3.47656" width="24" height="24" rx="12" stroke="url(#paint0_linear_396_88630)" stroke-width="6"/>
-</g>
-<defs>
-<filter id="filter0_b_396_88630" x="-15.4" y="-14.9234" width="60.8" height="60.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="7.7"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_396_88630"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_396_88630" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_396_88630" x1="15" y1="-2.58146" x2="15" y2="31.2855" gradientUnits="userSpaceOnUse">
-<stop stop-color="#A96FA1"/>
-<stop offset="0.0001" stop-color="#BD8BB6"/>
-<stop offset="1" stop-color="#764D6B"/>
-</linearGradient>
-</defs>
-</svg>
+<svg width="30" height="31" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><rect x="3" y="3.477" width="24" height="24" rx="12" stroke="url(#b)" stroke-width="6"/></g><defs><linearGradient id="b" x1="15" y1="-2.581" x2="15" y2="31.285" gradientUnits="userSpaceOnUse"><stop stop-color="#A96FA1"/><stop offset="0" stop-color="#BD8BB6"/><stop offset="1" stop-color="#764D6B"/></linearGradient><filter id="a" x="-15.4" y="-14.923" width="60.8" height="60.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImageFix" stdDeviation="7.7"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_396_88630"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur_396_88630" result="shape"/></filter></defs></svg>
