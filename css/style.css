@@ -206,6 +206,18 @@ span {
     left: 61px;
 }
 
+@media(min-width: 2240px) {
+    .promo__info {
+        left: 40%;
+    }
+}
+
+@media(min-width: 2940px) {
+    .promo__info {
+        left: 42%;
+    }
+}
+
 @media(max-width: 1510px) {
     .promo__info {
         left: 31.7%;
@@ -489,21 +501,6 @@ span {
     color: #BDBDBD;
 }
 
-.info__add-icon {
-    position: absolute;
-    left: -25px;
-}
-
-.info__add-icon:nth-child(1) {
-    top: 107px;
-}
-.info__add-icon:nth-child(2) {
-    bottom: 165px;
-}
-.info__add-icon:nth-child(3) {
-    bottom: 76px;
-}
-
 .info__item:nth-child(2) .info__add {
     padding: 0;
 }
@@ -630,7 +627,7 @@ span {
 }
 
 .education__scheme {
-    content: url(../img/info/04/img.png);
+    content: url(../img/info/04/img.svg);
 }
 
 .service-bg {
@@ -638,7 +635,7 @@ span {
     left: 0;
     top: 0;
     max-height: 100%;
-    content: url(../img/info/05/bg.png);
+    content: url(../img/info/05/bg.svg);
 }
 
 .service__info {
@@ -701,6 +698,36 @@ span {
     filter: blur(184.9px);
 }
 
+.descr__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.descr__list-item {
+    position: relative;
+}
+.descr__list-item::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -7px;
+    left: -75px;
+}
+
+.descr__list-item:nth-child(1)::before {
+    background-image: url(../img/info/01/01.svg);
+}
+.descr__list-item:nth-child(2)::before {
+    background-image: url(../img/info/01/02.svg);
+}
+.descr__list-item:nth-child(3)::before {
+    background-image: url(../img/info/01/03.svg);
+}
+
 @media(max-width: 1439px) {
     .info__wrapper {
         padding: 80px 0 198px;
@@ -718,14 +745,6 @@ span {
     }
     .info__item:nth-child(2) .info__main {
         padding: 50px 20px 50px 40px;
-    }
-    .info__add-icon:nth-child(2) {
-        bottom: auto;
-        top: 234px;
-    }
-    .info__add-icon:nth-child(3) {
-        bottom: auto;
-        top: 324px;
     }
     .introduction__list {
         padding: 42px 40px 30px 40px;
@@ -760,10 +779,10 @@ span {
         padding-left: 40px;
     }
     .education__scheme {
-        content: url(../img/info/04/img-1440.png);
+        content: url(../img/info/04/img-1440.svg);
     }
     .service-bg {
-        content: url(../img/info/05/bg-1440.png);
+        content: url(../img/info/05/bg-1440.svg);
     }
     .info__offer {
         padding: 50px;
@@ -804,20 +823,6 @@ span {
 
     .info__item:first-child .info__add {
         padding: 40px 23px 44px 120px;
-    }
-
-    .info__add__icons {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 32px;
-    }
-
-    .info__add-icon {
-        position: static;
     }
     .info__education {
         flex-direction: column;
@@ -882,7 +887,7 @@ span {
         padding: 40px;
     }
     .education__scheme {
-        content: url(../img/info/04/img-1000.png);
+        content: url(../img/info/04/img-1000.svg);
     }
     .service-bg {
         position: static;
@@ -907,6 +912,9 @@ span {
         position: relative;
         z-index: 2;
     }
+    .descr__list-item::before {
+        left: -83px;
+    }
 }
 
 @media(max-width: 767px) {
@@ -930,9 +938,6 @@ span {
     .info__item:first-child .info__add {
         padding: 30px;
         padding-left: 90px;
-    }
-    .info__add__icons {
-        left: 20px;
     }
     .info__item:nth-child(2) .info__add {
         flex-direction: column;
@@ -970,7 +975,7 @@ span {
         padding: 30px;
     }
     .service-bg {
-        content: url(../img/info/05/bg-768.png);
+        content: url(../img/info/05/bg-768.svg);
     }
     .info__offer {
         max-width: 100%;
@@ -993,6 +998,10 @@ span {
         top: -132px;
         right: -234px;
     }
+    .descr__list-item::before {
+        top: 0;
+        left: -70px;
+    }
 }
 
 @media(max-width: 479px) {
@@ -1012,7 +1021,7 @@ span {
         padding-right: 20px;
     }
     .education__scheme {
-        content: url(../img/info/04/img-360.png);
+        content: url(../img/info/04/img-360.svg);
     }
     .info__offer {
         transform: none;
@@ -1259,7 +1268,7 @@ span {
 }
 
 .cases__wrapper {
-    max-width: 1110px;
+    max-width: 1170px;
 }
 
 .cases__title {
