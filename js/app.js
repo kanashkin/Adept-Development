@@ -52,7 +52,7 @@ function listAnimation() {
         if (index < listItems.length) {
             listItems[index].style.transform = 'translateX(0)';
             index++;
-            setTimeout(animateNextItem, 700);
+            setTimeout(animateNextItem, 500);
         }
     }
 
